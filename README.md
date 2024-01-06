@@ -1,0 +1,27 @@
+# ZubairOS Code Editor
+![ZubairOS Code Editor](zubairos.PNG)
+
+ZubairOS Code Editor is a simple web-based code editor built using the Ace editor library. It allows users to write and edit code in various programming languages with syntax highlighting and other useful features.
+
+## Features
+- Language selection for syntax highlighting.
+- Theme customization for a personalized coding experience.
+- Adjustable font size to suit your preferences.
+- File opening and saving functionality.
+- Undo and redo operations.
+
+## Screenshots
+![ZubairOS Code Editor](zubairos.PNG)
+![ZubairOS Code Editor](zubairos_code_editor.PNG)
+
+## Developer
+Zubair Jammu
+
+## Credits
+This project uses the [Ace editor](https://github.com/ajaxorg/ace) library for code editing.
+
+## How to Use
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/your-username/ZubairOS-Code-Editor.git
