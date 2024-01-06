@@ -12,7 +12,7 @@ ZubairOS Code Editor is a simple web-based code editor built using the Ace edito
 
 ## Screenshots
 ![ZubairOS Code Editor](zubairos.PNG)
-![ZubairOS Code Editor](zubairos_code_editor.PNG)
+![ZubairOS Code Editor](zubairoscodeeditor.PNG)
 
 ## Developer
 Zubair Jammu
