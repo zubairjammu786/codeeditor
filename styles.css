@@ -1,0 +1,35 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    color: #007bff;
+}
+
+.editor-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+}
+
+label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+select,
+button {
+    padding: 10px;
+    font-size: 14px;
+}
+
+#editor {
+    height: 400px;
+    width: 100%;
+    margin-top: 20px;
+}
