@@ -24,4 +24,4 @@ This project uses the [Ace editor](https://github.com/ajaxorg/ace) library for c
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/ZubairOS-Code-Editor.git
+   git clone https://github.com/zubairjammu786/ZubairOS-Code-Editor.git
