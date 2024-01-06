@@ -40,50 +40,18 @@ document.addEventListener('DOMContentLoaded', function () {
         document.body.removeChild(a);
     }
 
-    function updateEditorLanguage(fileName) {
-        const fileExtension = fileName.split('.').pop();
-        const mode = 'ace/mode/' + determineMode(fileExtension);
-        editor.getSession().setMode(mode);
+    // New function to handle button click
+    function handleButtonClick(buttonFunction) {
+        return function () {
+            buttonFunction();
+        };
     }
 
-    function getFileExtension() {
-        const fileTypeSelector = document.getElementById('fileType');
-        return fileTypeSelector.value;
-    }
+    // Event listeners for buttons
+    document.getElementById('openButton').addEventListener('click', handleButtonClick(openFile));
+    document.getElementById('saveButton').addEventListener('click', handleButtonClick(saveFile));
 
-    function determineMode(fileExtension) {
-        switch (fileExtension) {
-            case 'js':
-                return 'javascript';
-            case 'html':
-                return 'html';
-            case 'css':
-                return 'css';
-            case 'txt':
-                return 'text';
-            case 'java':
-                return 'java';
-            case 'rb':
-                return 'ruby';
-            case 'php':
-                return 'php';
-            case 'cs':
-                return 'csharp';
-            case 'md':
-                return 'markdown';
-            default:
-                return 'python';
-        }
-    }
-
-    function undo() {
-        editor.undo();
-    }
-
-    function redo() {
-        editor.redo();
-    }
-
+    // Existing code for keyboard shortcuts
     document.addEventListener('keydown', function (e) {
         if (e.ctrlKey && e.key === 's') {
             e.preventDefault();
@@ -102,6 +70,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
+    // Remaining existing code
     document.getElementById('theme').addEventListener('change', function () {
         const selectedTheme = this.value;
         editor.setTheme(selectedTheme);
