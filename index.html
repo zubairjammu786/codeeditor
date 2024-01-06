@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZubairOS Code Editor</title>
+
+    <!-- Ace Editor Online CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12/ace.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12/ext-language_tools.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <h1>ZubairOS Code Editor</h1>
+
+    <div class="editor-controls">
+        <div>
+            <!-- Language Selector -->
+            <label for="fileType">Language:</label>
+            <select id="fileType">
+                <option value="python">Python</option>
+                <option value="javascript">JavaScript</option>
+                <option value="html">HTML</option>
+                <option value="css">CSS</option>
+                <option value="text">Plain Text</option>
+                <option value="java">Java</option>
+                <option value="ruby">Ruby</option>
+                <option value="php">PHP</option>
+                <option value="csharp">C#</option>
+                <option value="markdown">Markdown</option>
+            </select>
+
+            <!-- Theme Selector -->
+            <label for="theme">Theme:</label>
+            <select id="theme">
+                <option value="ace/theme/dracula">Dracula</option>
+                <option value="ace/theme/github">GitHub</option>
+                <option value="ace/theme/monokai">Monokai</option>
+                <option value="ace/theme/twilight">Twilight</option>
+            </select>
+
+            <!-- Font Size Selector -->
+            <label for="fontSize">Font Size:</label>
+            <select id="fontSize">
+                <option value="12">12px</option>
+                <option value="14">14px</option>
+                <option value="16">16px</option>
+                <option value="18">18px</option>
+                <option value="20">20px</option>
+                <option value="24">24px</option>
+                <option value="28">28px</option>
+                <option value="32">32px</option>
+            </select>
+        </div>
+
+        <!-- Editor Controls -->
+        <div>
+            <button onclick="openFile()">Open File (Ctrl + O)</button>
+            <button onclick="saveFile()">Save File (Ctrl + S)</button>
+            <button onclick="undo()">Undo</button>
+            <button onclick="redo()">Redo</button>
+        </div>
+    </div>
+
+    <!-- Code Editor -->
+    <div id="editor"></div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
